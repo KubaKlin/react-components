@@ -1,0 +1,42 @@
+.productSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 991px) {
+    margin-bottom: 25px;
+    text-align: center;
+    flex-direction: column !important;
+  }
+}
+
+.productSectionContent {
+  flex-basis: 43%;
+
+  @media (max-width: 991px) {
+    flex-basis: 100%;
+  }
+
+  h4 {
+    margin: 0 0 15px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0 0 15px;
+    font-size: 16px;
+    color: #545454;
+  }
+}
+
+.productSectionImage {
+  max-width: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+.highlighted {
+  color: #1090cb;
+}

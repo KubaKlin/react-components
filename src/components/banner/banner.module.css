@@ -1,0 +1,36 @@
+.banner {
+  background: rgba(16, 144, 203, 0.1);
+}
+
+.bannerHeader {
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 600;
+
+  @media (max-width: 991px) {
+    margin-top: 0;
+  }
+
+  span {
+    color: #1090cb;
+  }
+}
+
+.bannerParagraph {
+  font-size: 16px;
+  color: #5c5c5c;
+  line-height: 2;
+}
+
+.twoColumnGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+
+  @media (max-width: 991px) {
+    display: flex;
+    flex-direction: column-reverse;
+    grid-template-columns: 1fr;
+  }
+}

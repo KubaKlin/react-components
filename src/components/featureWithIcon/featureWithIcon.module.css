@@ -1,0 +1,33 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconBox {
+  display: flex;
+  width: 83px;
+  height: 83px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  border-radius: 20px;
+
+  img {
+    max-width: 40px;
+  }
+}
+
+.boxContent {
+  h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  p {
+    margin: 0;
+    color: #969696;
+    font-weight: 400;
+  }
+}
