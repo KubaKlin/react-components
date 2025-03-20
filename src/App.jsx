@@ -6,13 +6,12 @@ import { BigHeader } from './components/BigHeader/BigHeader.jsx';
 import { ProductSection } from './components/ProductSection/ProductSection.jsx';
 import { TextBox } from './components/TextBox/TextBox.jsx';
 import { CompanyLogo } from './components/CompanyLogo/CompanyLogo.jsx';
-import { SocialIcon } from './components/SocialIcon/SocialIcon.jsx';
 import { featureBoxes } from './utilities/featureBoxes.jsx';
 import { productSections } from './utilities/productSections.jsx';
 import { textBoxes } from './utilities/textBoxes.jsx';
 import { bigHeaderContent } from './utilities/bigHeaderContent.jsx';
 import { logos } from './utilities/logos.jsx';
-import { socialIcons } from './utilities/socialIcons.jsx';
+import { Footer } from './components/Footer/Footer.jsx';
 
 function App() {
   return (
@@ -71,40 +70,7 @@ function App() {
         </div>
       </section>
 
-      <footer>
-        <div className="container">
-          <div className="footer-content">
-            <a href="/" className="logo">
-              Logo
-            </a>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p>@Lorem</p>
-          </div>
-
-          <div className="footer-content">
-            <h4>Contact us</h4>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div className="footer-socials">
-              <p>+908 89097 890</p>
-              <div className="social-icons">
-                {socialIcons.map((socialIcon) => (
-                  <SocialIcon
-                    key={socialIcon.id}
-                    icon={socialIcon.icon}
-                    href={socialIcon.href}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
