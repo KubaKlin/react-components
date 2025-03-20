@@ -3,20 +3,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.logo {
-  text-transform: uppercase;
-  color: #1090cb;
-  font-weight: 700;
-  font-size: 29px;
-  text-decoration: none;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .feature-boxes {
   padding: 35px 0;
   border-bottom: 1px solid #c7c7c7;
