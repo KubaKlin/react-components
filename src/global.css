@@ -2,37 +2,3 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
-
-.text-box-section {
-  margin-top: 50px;
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-
-    @media (max-width: 991px) {
-      grid-template-columns: 1fr;
-    }
-  }
-}
-
-.logo-section {
-  margin-top: 70px;
-  font-size: 24px;
-  text-align: center;
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    img {
-      margin: 0 auto;
-      max-width: 90%;
-    }
-  }
-}

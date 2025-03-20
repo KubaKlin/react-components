@@ -2,11 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &.reverseClass {
+    flex-direction: row-reverse;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
 
   @media (max-width: 991px) {
     margin-bottom: 25px;
     text-align: center;
-    flex-direction: column !important;
+    flex-direction: column;
   }
 }
 

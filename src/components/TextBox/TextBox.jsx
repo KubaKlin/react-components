@@ -3,17 +3,16 @@ import style from './TextBox.module.css';
 export const TextBox = ({ title, description, blueBackground }) => {
   return (
     <div
-      className={style.textBox}
-      style={
-        blueBackground
-          ? { backgroundColor: '#1090CB' }
-          : { backgroundColor: '#F4F4F4' }
-      }
+      className={`${style.textBox} ${blueBackground ? style.blueBackground : ''}`}
     >
-      <h4 style={blueBackground ? { color: '#FFFFFF' } : { color: '#252525' }}>
+      <h4
+        className={`${style.header} ${blueBackground ? style.blueBackground : ''}`}
+      >
         {title}
       </h4>
-      <p style={blueBackground ? { color: '#FFFFFF' } : { color: '#252525' }}>
+      <p
+        className={`${style.paragraph} ${blueBackground ? style.blueBackground : ''}`}
+      >
         {description}
       </p>
     </div>

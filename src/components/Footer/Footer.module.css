@@ -8,6 +8,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
 
     @media (max-width: 991px) {
       grid-template-columns: 1fr;
