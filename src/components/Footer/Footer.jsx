@@ -20,7 +20,7 @@ export const Footer = () => {
         <div className={styles.footerContent}>
           <h4 className={styles.footerHeader}>Contact us</h4>
           <p className={styles.footerParagraph}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+            Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
           <div className={styles.footerSocials}>

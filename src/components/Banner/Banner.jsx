@@ -7,8 +7,9 @@ export const Banner = () => {
         <div className={styles.twoColumnGrid}>
           <div>
             <h3 className={styles.bannerHeader}>
-              Experienced <span className={styles.colorWrapper}>mobile and web</span> applications and website
-              builders.
+              Experienced{' '}
+              <span className={styles.colorWrapper}>mobile and web</span>{' '}
+              applications and website builders.
             </h3>
             <p className={styles.bannerParagraph}>
               KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web

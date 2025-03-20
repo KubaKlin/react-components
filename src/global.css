@@ -3,27 +3,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.feature-boxes {
-  padding: 35px 0;
-  border-bottom: 1px solid #c7c7c7;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-
-    @media (max-width: 991px) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      justify-items: flex-start;
-    }
-
-    @media (max-width: 650px) {
-      grid-template-columns: 1fr;
-    }
-  }
-}
-
 .text-box-section {
   margin-top: 50px;
   .container {

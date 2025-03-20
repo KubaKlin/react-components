@@ -12,25 +12,24 @@ import { textBoxes } from './utilities/textBoxes';
 import { bigHeaderContent } from './utilities/bigHeaderContent';
 import { logos } from './utilities/logos';
 import { Footer } from './components/Footer/Footer';
+import { FeatureBoxWrapper } from './components/FeatureWithIcon/FeatureBoxWrapper.jsx';
 
 function App() {
   return (
     <>
       <Navbar />
       <Banner />
-      <section className="feature-boxes">
-        <div className="container">
-          {featureBoxes.map((featureBox) => (
-            <FeatureWithIcon
-              key={featureBox.id}
-              title={featureBox.title}
-              subtitle={featureBox.subtitle}
-              icon={featureBox.icon}
-              color={featureBox.color}
-            />
-          ))}
-        </div>
-      </section>
+      <FeatureBoxWrapper>
+        {featureBoxes.map((featureBox) => (
+          <FeatureWithIcon
+            key={featureBox.id}
+            title={featureBox.title}
+            subtitle={featureBox.subtitle}
+            icon={featureBox.icon}
+            color={featureBox.color}
+          />
+        ))}
+      </FeatureBoxWrapper>
       <BigHeader
         title={bigHeaderContent.title}
         subtitle={bigHeaderContent.subtitle}
