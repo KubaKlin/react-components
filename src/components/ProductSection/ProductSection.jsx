@@ -1,13 +1,7 @@
 import style from './ProductSection.module.css';
+import {FormattedTitle} from "./FormattedTitle.jsx";
 
 export const ProductSection = ({ title, description, image, reverse }) => {
-  const [firstWord, ...restWords] = title.split(' ');
-  const formattedTitle = (
-    <>
-      <span className={style.highlighted}>{firstWord}</span>{' '}
-      {restWords.join(' ')}
-    </>
-  );
 
   return (
     <div
@@ -15,11 +9,11 @@ export const ProductSection = ({ title, description, image, reverse }) => {
       style={reverse ? { flexDirection: 'row-reverse' } : null}
     >
       <div className={style.productSectionContent}>
-        <h4>{formattedTitle}</h4>
-        <p>{description}</p>
+        <FormattedTitle title={title}/>
+        <p className={style.paragraph}>{description}</p>
       </div>
       <div className={style.productSectionImage}>
-        <img src={image} alt="product image" />
+        <img className={style.image} src={image} alt="product image" />
       </div>
     </div>
   );
