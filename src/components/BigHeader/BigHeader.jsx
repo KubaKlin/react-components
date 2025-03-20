@@ -1,4 +1,4 @@
-import style from './bigHeader.module.css';
+import style from './BigHeader.module.css';
 
 export const BigHeader = ({ title, subtitle }) => {
   return (

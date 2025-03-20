@@ -1,4 +1,4 @@
-import style from './textBox.module.css';
+import style from './TextBox.module.css';
 
 export const TextBox = ({ title, description, blueBackground }) => {
   return (

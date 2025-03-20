@@ -1,4 +1,4 @@
-import styles from './socialIcon.module.css';
+import styles from './SocialIcon.module.css';
 
 export const SocialIcon = ({ icon, href }) => {
   return (

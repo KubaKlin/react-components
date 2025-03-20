@@ -16,6 +16,10 @@
   }
 }
 
+.bannerImg {
+  max-width: 90%;
+}
+
 .bannerParagraph {
   font-size: 16px;
   color: #5c5c5c;

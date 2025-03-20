@@ -1,4 +1,4 @@
-import style from './productSection.module.css';
+import style from './ProductSection.module.css';
 
 export const ProductSection = ({ title, description, image, reverse }) => {
   const [firstWord, ...restWords] = title.split(' ');

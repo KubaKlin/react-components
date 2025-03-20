@@ -1,4 +1,4 @@
-import styles from './featureWithIcon.module.css';
+import styles from './FeatureWithIcon.module.css';
 
 export const FeatureWithIcon = ({ color, icon, title, subtitle }) => {
   return (
