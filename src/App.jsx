@@ -21,23 +21,43 @@ function App() {
       <Banner />
       <section className="feature-boxes">
         <div className="container">
-          {featureBoxes.map((featureBox, index) => (
-            <FeatureWithIcon key={index} {...featureBox} />
+          {featureBoxes.map((featureBox) => (
+            <FeatureWithIcon
+              key={featureBox.id}
+              title={featureBox.title}
+              subtitle={featureBox.subtitle}
+              icon={featureBox.icon}
+              color={featureBox.color}
+            />
           ))}
         </div>
       </section>
-      <BigHeader {...bigHeaderContent} />
+      <BigHeader
+        title={bigHeaderContent.title}
+        subtitle={bigHeaderContent.subtitle}
+      />
       <section>
         <div className="container">
-          {productSections.map((productSection, index) => (
-            <ProductSection key={index} {...productSection} />
+          {productSections.map((productSection) => (
+            <ProductSection
+              key={productSection.id}
+              title={productSection.title}
+              description={productSection.description}
+              image={productSection.image}
+              reverse={productSection.reverse}
+            />
           ))}
         </div>
       </section>
       <section className="text-box-section">
         <div className="container">
-          {textBoxes.map((textBox, index) => (
-            <TextBox ey={index} {...textBox} />
+          {textBoxes.map((textBox) => (
+            <TextBox
+              key={textBox.id}
+              title={textBox.title}
+              description={textBox.description}
+              blueBackground={textBox.blueBackground}
+            />
           ))}
         </div>
       </section>
@@ -45,8 +65,8 @@ function App() {
       <section className="logo-section">
         <h5>You will be in good company</h5>
         <div className="container">
-          {logos.map((logo, index) => (
-            <CompanyLogo key={index} {...logo} />
+          {logos.map((logo) => (
+            <CompanyLogo key={logo.id} icon={logo.icon} />
           ))}
         </div>
       </section>
@@ -73,8 +93,12 @@ function App() {
             <div className="footer-socials">
               <p>+908 89097 890</p>
               <div className="social-icons">
-                {socialIcons.map((socialIcon, index) => (
-                  <SocialIcon key={index} {...socialIcon} />
+                {socialIcons.map((socialIcon) => (
+                  <SocialIcon
+                    key={socialIcon.id}
+                    icon={socialIcon.icon}
+                    href={socialIcon.href}
+                  />
                 ))}
               </div>
             </div>

@@ -1,18 +1,22 @@
 export const socialIcons = [
   {
+    id: 1,
     icon: 'src/assets/icons/export-logo.svg',
-    href: 'facebook.com',
+    href: 'https://www.facebook.com',
   },
   {
+    id: 2,
     icon: 'src/assets/icons/instagram-logo.svg',
-    href: 'instagram.com',
+    href: 'https://www.instagram.com',
   },
   {
+    id: 3,
     icon: 'src/assets/icons/linkedin-logo.svg',
-    href: 'linkedin.com',
+    href: 'https://www.linkedin.com',
   },
   {
+    id: 4,
     icon: 'src/assets/icons/twitter-logo.svg',
-    href: 'twitter.com',
+    href: 'https://www.twitter.com',
   },
 ];
