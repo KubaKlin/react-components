@@ -1,17 +1,17 @@
 import './global.css';
-import { Navbar } from './components/Navbar/Navbar.jsx';
-import { Banner } from './components/Banner/Banner.jsx';
-import { FeatureWithIcon } from './components/FeatureWithIcon/FeatureWithIcon.jsx';
-import { BigHeader } from './components/BigHeader/BigHeader.jsx';
-import { ProductSection } from './components/ProductSection/ProductSection.jsx';
-import { TextBox } from './components/TextBox/TextBox.jsx';
-import { CompanyLogo } from './components/CompanyLogo/CompanyLogo.jsx';
-import { featureBoxes } from './utilities/featureBoxes.jsx';
-import { productSections } from './utilities/productSections.jsx';
-import { textBoxes } from './utilities/textBoxes.jsx';
-import { bigHeaderContent } from './utilities/bigHeaderContent.jsx';
-import { logos } from './utilities/logos.jsx';
-import { Footer } from './components/Footer/Footer.jsx';
+import { Navbar } from './components/Navbar/Navbar';
+import { Banner } from './components/Banner/Banner';
+import { FeatureWithIcon } from './components/FeatureWithIcon/FeatureWithIcon';
+import { BigHeader } from './components/BigHeader/BigHeader';
+import { ProductSection } from './components/ProductSection/ProductSection';
+import { TextBox } from './components/TextBox/TextBox';
+import { CompanyLogo } from './components/CompanyLogo/CompanyLogo';
+import { featureBoxes } from './utilities/featureBoxes';
+import { productSections } from './utilities/productSections';
+import { textBoxes } from './utilities/textBoxes';
+import { bigHeaderContent } from './utilities/bigHeaderContent';
+import { logos } from './utilities/logos';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
