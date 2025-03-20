@@ -2,6 +2,12 @@
   background: rgba(16, 144, 203, 0.1);
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .bannerHeader {
   margin-bottom: 16px;
   font-size: 40px;
@@ -11,7 +17,7 @@
     margin-top: 0;
   }
 
-  span {
+  .colorWrapper {
     color: #1090cb;
   }
 }

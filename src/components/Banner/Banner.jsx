@@ -3,11 +3,11 @@ import styles from './Banner.module.css';
 export const Banner = () => {
   return (
     <div className={styles.banner}>
-      <div className="container">
+      <div className={styles.container}>
         <div className={styles.twoColumnGrid}>
           <div>
             <h3 className={styles.bannerHeader}>
-              Experienced <span>mobile and web</span> applications and website
+              Experienced <span className={styles.colorWrapper}>mobile and web</span> applications and website
               builders.
             </h3>
             <p className={styles.bannerParagraph}>
