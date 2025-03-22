@@ -1,37 +1,25 @@
 import './global.css';
 import { Navbar } from './components/Navbar/Navbar';
 import { Banner } from './components/Banner/Banner';
-import { FeatureWithIcon } from './components/FeatureWithIcon/FeatureWithIcon';
 import { BigHeader } from './components/BigHeader/BigHeader';
 import { ProductSection } from './components/ProductSection/ProductSection';
 import { TextBox } from './components/TextBox/TextBox';
 import { CompanyLogo } from './components/CompanyLogo/CompanyLogo';
-import { featureBoxes } from './utilities/featureBoxes';
 import { productSections } from './utilities/productSections';
 import { textBoxes } from './utilities/textBoxes';
 import { bigHeaderContent } from './utilities/bigHeaderContent';
 import { logos } from './utilities/logos';
 import { Footer } from './components/Footer/Footer';
-import { FeatureBoxWrapper } from './components/FeatureWithIcon/FeatureBoxWrapper.jsx';
-import { TextBoxWrapper } from './components/TextBox/TextBoxWrapper.jsx';
-import { CompanyLogoWrapper } from './components/CompanyLogo/CompanyLogoWrapper.jsx';
+import { FeatureBoxWrapper } from './components/FeatureBoxWrapper/FeatureBoxWrapper';
+import { TextBoxWrapper } from './components/TextBox/TextBoxWrapper';
+import { CompanyLogoWrapper } from './components/CompanyLogo/CompanyLogoWrapper';
 
 function App() {
   return (
     <>
       <Navbar />
       <Banner />
-      <FeatureBoxWrapper>
-        {featureBoxes.map((featureBox) => (
-          <FeatureWithIcon
-            key={featureBox.id}
-            title={featureBox.title}
-            subtitle={featureBox.subtitle}
-            icon={featureBox.icon}
-            color={featureBox.color}
-          />
-        ))}
-      </FeatureBoxWrapper>
+      <FeatureBoxWrapper />
       <BigHeader
         title={bigHeaderContent.title}
         subtitle={bigHeaderContent.subtitle}

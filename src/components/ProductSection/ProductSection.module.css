@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding: 0 15px;
 
-  &.reverseClass {
+  &.reversedProductSection {
     flex-direction: row-reverse;
 
     @media (max-width: 991px) {

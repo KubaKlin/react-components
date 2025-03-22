@@ -1,10 +1,10 @@
 import style from './ProductSection.module.css';
-import { FormattedTitle } from './FormattedTitle.jsx';
+import { FormattedTitle } from './FormattedTitle';
 
 export const ProductSection = ({ title, description, image, reverse }) => {
   return (
     <div
-      className={`${style.productSection} ${reverse ? style.reverseClass : ''}`}
+      className={`${style.productSection} ${reverse ? style.reversedProductSection : ''}`}
     >
       <div className={style.productSectionContent}>
         <FormattedTitle title={title} />
