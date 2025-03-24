@@ -1,0 +1,20 @@
+.bigHeaderWrapper {
+  text-align: center;
+  margin: 115px auto 35px;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.header {
+  margin-bottom: 32px;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.paragraph {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 400;
+  color: #868686;
+}
